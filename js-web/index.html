@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Student Record System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- REQUIRED: display identifier prominently -->
+  <header class="header">
+    <h1>Student Record System — RICH ANDREI CANTAROS (22-1867-386)</h1>
+    <p>Web Version (JavaScript) — CRUD in memory</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Add Student</h2>
+      <form id="studentForm" autocomplete="off">
+        <label>
+          ID
+          <input id="idInput" type="text" required />
+        </label>
+        <label>
+          Name
+          <input id="nameInput" type="text" required />
+        </label>
+        <label>
+          Grade
+          <input id="gradeInput" type="text" required />
+        </label>
+
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Records</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">ID</th>
+              <th>Name</th>
+              <th style="width: 20%;">Grade</th>
+              <th style="width: 18%;">Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>Programmer: RICH ANDREI CANTAROS — 22-1867-386</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
